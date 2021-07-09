@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>조건문</title>
+</head>
+<body>
+  
+  <script>
+    let today = new Date();  // 현재 날짜와 시간 정보를 가져옴
+    let current = today.getHours();  // 현재 시간(hours) 정보를 가져옴. 0~23
+
+    if ( current <= 12) {
+      alert("오전입니다");
+    } else {
+      alert("오후입니다")
+    }
+  </script>
+</body>
+</html>
