@@ -1,0 +1,36 @@
+*{
+  box-sizing:border-box;
+}
+#container {  
+  width:500px;
+  padding:20px;
+}
+h1, p{
+  margin-bottom:20px;  
+}
+
+input[type="text"] {
+  width:370px;
+  float:left;
+  height:30px;
+  padding-left:30px;
+}
+button {
+  width:90px;
+  height:30px;
+  float:right;
+  background:#222;
+  color:#fff;
+  border:none;
+}
+ul { 
+  list-style:none; 
+  margin-top:20px;
+}
+li { 
+  line-height: 2.5; 
+  margin-left:20px;
+}
+li:hover { 
+  cursor:pointer;
+}

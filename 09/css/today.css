@@ -1,0 +1,28 @@
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#container{
+  padding:20px;
+  border:1px solid #ccc;
+  border-radius: 14px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+#container div {
+  margin:10px;
+}
+#today {
+  font-size:1.2em;
+}
+#clock {
+  font-size:1em;
+}

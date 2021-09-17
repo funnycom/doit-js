@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator - 1</title>
+</head>
+<body>
+  <script>
+    let add =(...params) => {
+    let sum = 0;
+    params.forEach(el =>{
+        sum = sum + parseInt(el);
+    })
+    return sum
+}
+
+document.querySelector('.add').addEventListener('click' , function (e) {
+    const adder = document.querySelector('.addinput').value 
+    const meow = adder.split(',')
+    let result = add(...meow)
+    if (isNaN(result)) {
+        result = 'ENTER A NUMBER'
+    }
+    document.querySelector('.result').textContent = result
+})
+
+let times =(...params) => {
+    let multiply = 1;
+    params.forEach(el =>{
+        multiply = multiply * el;
+    })
+    return multiply
+}
+
+document.querySelector('.multiply').addEventListener('click' , function (e) {
+    const multiplier = document.querySelector('.multiplyinput').value 
+    const moo = multiplier.split(',')
+    let product = times(...moo)
+    if (isNaN(product)) {
+        product = 'ENTER A NUMBER'
+    }
+    document.querySelector('.product').textContent = product
+})
+
+let subtract =(...params) => {
+    let diff = 0;
+   diff = params[0] - params[1]
+    return diff
+}
+
+document.querySelector('.subtract').addEventListener('click' , function (e) {
+    const subtracter = document.querySelector('.subtractinput').value 
+    const woof = subtracter.split(',')
+    let diff = subtract(...woof)
+    if (isNaN(diff)) {
+        diff = 'ENTER A NUMBER'
+    }
+    document.querySelector('.difference').textContent = diff
+})
+
+let divide =(...params) => {
+    let quotient = 0;
+    quotient = params[0] / params[1]
+    return quotient
+}
+
+document.querySelector('.divide').addEventListener('click' , function (e) {
+    const divider = document.querySelector('.divideinput').value 
+    const moo2 = divider.split(',')
+    let quotient = divide(...moo2)
+    if (isNaN(quotient)) {
+        quotient = 'ENTER A NUMBER'
+    }
+    document.querySelector('.quotient').textContent = quotient
+})
+
+  </script>
+</body>
+</html>

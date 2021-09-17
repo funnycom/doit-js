@@ -5,8 +5,10 @@
 body {
   height:100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size:2em;
-  font-weight: bold;
+  font-size:32px;
 }
+
+

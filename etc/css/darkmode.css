@@ -1,0 +1,39 @@
+*{
+  margin:0;
+  padding:0;
+}
+body {	
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dark {
+	background-color:#222;
+	color:#eee;
+}
+#toggle-box {
+	position:fixed;
+	top:10px;	
+	right:0px;
+}
+#toggle-box input {
+	zoom:0.8;
+}
+label { 
+	display:inline-block;
+	width:150px;
+	font-size:12px;
+}
+#contents{
+	width:300px;
+	height:200px;	
+	padding:20px;
+	border:1px solid #ccc;
+	border-radius:4%;	
+}
+p {
+	font-size:1rem;
+	line-height:2;
+}

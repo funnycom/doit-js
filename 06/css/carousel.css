@@ -1,0 +1,41 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+p {
+  margin:20px;
+  font-size:2em;  
+}
+
+#container{
+  position:relative;
+  width:600px;
+  height:300px;
+  border:2px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  z-index:100;
+  font-size:2em;
+  padding:10px;
+  background:#ddd;
+  color:#222;
+  opacity:0.2;
+}
+
+.arrow:hover {
+  opacity:1;
+}

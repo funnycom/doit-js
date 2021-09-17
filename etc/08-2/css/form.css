@@ -1,0 +1,18 @@
+ul {
+  list-style: none;
+}
+
+li {
+  font-size:1em;
+  line-height:2.5;
+}
+
+input[type="text"] {
+  width:250px;
+  padding:10px;
+}
+
+button {
+  padding:10px 20px;
+  margin:20px;
+}

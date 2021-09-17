@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>노드 추가하기</title>
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="stylesheet" href="css/nodelist.css">
+  <style>
+    #itemList li {
+      display:flex;      
+    }
+    /* #itemList li div {
+      flex-basis : 15px auto 20px;
+    } */
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Web Programming</h1>
+    <p>공부할 주제를 기록해 보세요</p>
+    <input type="text" id="addTask" autofocus>
+    <button id="add" onclick="item.addTaskClick()">추가</button>    
+    <hr>  
+    <ul id="itemList"></ul>  
+  </div>
+  
+  <script src="js/subject.js"></script>
+</body>
+</html>
