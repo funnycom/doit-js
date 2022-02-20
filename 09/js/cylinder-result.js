@@ -1,11 +1,12 @@
-function Cylinder(cyl_diameter, cyl_height) {
-  this.diameter = cyl_diameter;
-  this.height = cyl_height;
-}
-
-Cylinder.prototype.volume = function () {
-  let radius = this.diameter / 2;    // 반지름 계산하기
-  return (Math.PI * radius * radius * this.height).toFixed(2);    // 부피 계산해서 반환
+class Cylinder {
+  constructor(cyl_diameter, cyl_height) {
+    this.diameter = cyl_diameter;
+    this.height = cyl_height;
+  }
+  volume() {
+    let radius = this.diameter / 2; // 반지름 계산하기
+    return (Math.PI * radius * radius * this.height).toFixed(2); // 부피 계산해서 반환
+  }
 }
 
 // let cylinder = new Cylinder(8, 10);      // 인스턴스 생성
