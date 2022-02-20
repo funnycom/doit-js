@@ -7,6 +7,5 @@ function addNum(...numbers) {
   return sum;
 }
 
-document.write(addNum(1, 3));
-document.write("<br>");
-document.write(addNum(1, 3, 5, 7));
+console.log(addNum(1, 3));
+console.log(addNum(1, 3, 5, 7));

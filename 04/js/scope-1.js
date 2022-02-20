@@ -1,10 +1,5 @@
-const factor = 5;
-
-function calc() {  
-  return num * factor;
+function sum(a, b) {
+  var result = a + b;
 }
-{
-  const num = 10;  
-  let result = calc();
-  document.write(`result : ${result} `);
-}
+sum(10, 20);
+console.log(result);

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카카오 지도 API 활용하기</title>
+  <style>
+    * margin {
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 2.5rem;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <h1>여러 개 마커 표시하기</h1>
+  <!-- 지도를 표시할 div 입니다 -->
+  <div id="map" style="width:100%;height:550px;"></div>
+
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=66bb56bd796e4183ae7906d8b515a0fe"></script>
+  <script>
+    const lat = 37.55684;
+    const lng = 126.91404;
+
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(lat, lng), // 지도의 중심좌표 - 이지스퍼블리싱
+            level: 3 // 지도의 확대 레벨
+        };
+
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+    var positions = [
+      {
+        title: '<div style="padding:5px;font-size:0.9rem;">이지스퍼블리싱</div>',
+        latlng: new kakao.maps.LatLng(37.55684, 126.91404)    
+      },
+      {
+        title: '<div style="padding:5px;font-size:0.9rem;">테스트1</div>',
+        latlng: new kakao.maps.LatLng(37.55834, 126.91302)        
+      },
+      {
+        title: '<div style="padding:5px;font-size:0.9rem;">테스트2</div>',
+        latlng: new kakao.maps.LatLng(37.55483, 126.91276)
+      },
+      {
+        title: '<div style="padding:5px;font-size:0.9rem;">테스트3</div>',
+        latlng: new kakao.maps.LatLng(37.55744, 126.91860)
+      }    
+    ];
+
+    for(let i = 0; i < positions.length; i++) {
+      // 마커를 생성합니다
+      var marker = new kakao.maps.Marker({
+          map: map,
+          position: positions[i].latlng
+      });
+
+      var infowindow = new kakao.maps.InfoWindow( {
+        content : positions[i].title   // 인포윈도우에 표시할 내용
+      });
+
+      // 마커에 이벤트를 등록합니다
+      // 이벤트 리스너로는 클로저를 만들어 등록합니다 
+      // 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
+
+      // 마커에 마우스오버하면 makeOverListener() 실행
+      kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));  
+      // 마커에서 마우스아웃하면 makeOutListener() 실행
+      kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));   
+    }
+
+    // 인포윈도우를 표시하는 클로저를 만드는 함수입니다 
+    function makeOverListener(map, marker, infowindow) {
+        return function() {
+            infowindow.open(map, marker);          
+        };
+    }
+
+    // 인포윈도우를 닫는 클로저를 만드는 함수입니다 
+    function makeOutListener(infowindow) {
+        return function() {
+            infowindow.close();
+        };
+    }
+  </script>
+</body>
+</html>

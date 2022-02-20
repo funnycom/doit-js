@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캔버스에 곡선 그리기</title>
+  <style>
+    canvas {
+      border:1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="400" height="300"></canvas>
+
+  <script>
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext("2d");    
+
+    ctx.beginPath();
+    ctx.moveTo(50, 100);   // 곡선 시작 위치
+    ctx.quadraticCurveTo(100, 50, 150, 100); 
+    ctx.quadraticCurveTo(200, 150, 250, 100); 
+    ctx.quadraticCurveTo(300, 50, 350, 100); 
+    ctx.stroke();
+  </script>
+</body>
+</html>

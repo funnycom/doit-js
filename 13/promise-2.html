@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비동기 프로그래밍 - promise</title>
+</head>
+<body>
+  <script>
+    let likePizza = true;
+    const pizza = new Promise((resolve, reject) => {
+      if (likePizza) 
+        resolve('피자를 주문합니다.');
+      else
+        reject('피자를 주문하지 않습니다.');
+    });
+
+    pizza
+      .then(
+        result => console.log(result)
+      )
+      .catch(
+        err => console.log(err)
+      )
+      .finally (
+        () => console.log('완료')
+      );   
+  </script>
+</body>
+</html>

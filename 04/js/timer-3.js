@@ -1,6 +1,4 @@
-function goToEasys() {
-  location.href = "http://www.easyspub.co.kr/Main/pub";  
-}
-
-setTimeout("goToEasys()", 3000);
+setTimeout(() => {
+  console.log("안녕하세요?")
+}, 3000);
 

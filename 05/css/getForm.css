@@ -1,0 +1,39 @@
+#container {
+	width:500px;
+	margin:10px auto;
+}
+form fieldset{
+	margin-bottom:25px; 
+ }
+ form legend{
+	font-size:15px;
+	font-weight:600; 
+ }
+
+label.reg {
+	font-size:14px;
+	width:110px;
+	color:#390;
+	font-weight:bold;		
+	float:left;
+	text-align:right;
+	margin-right:10px;
+ }	 
+ form ul li{
+	list-style:none; 
+	margin: 15px 0;	
+	font-size:14px;	
+ }
+ #selectAll {
+	 cursor:pointer;
+ }
+ button {
+	 width:100%;
+	 padding:10px 20px;
+ }
+
+ button:hover {
+	 background:#222;
+	 color:#fff;
+	 cursor: pointer;
+ }

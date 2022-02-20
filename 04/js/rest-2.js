@@ -3,5 +3,5 @@ function displayFavorites(first, ...favs) {
   return str;
 }
 
-document.write(displayFavorites("사과", "포도", "토마토"));
+console.log(displayFavorites("사과", "포도", "토마토"));
 

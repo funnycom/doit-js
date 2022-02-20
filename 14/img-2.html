@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캔버스에서 이미지 처리하기</title>
+  <style>
+    canvas {
+      border:1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="500" height="400"></canvas>
+
+  <script>
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext("2d");
+
+    let img = new Image();
+    img.onload = function() {
+      ctx.drawImage(img, 100, 50, 280, 350, 160, 100, 140, 175);   
+    } 
+    img.src = "images/cat.jpg";    
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+#container {
+  width:500px;
+  margin:20px auto;
+}
+h1 {
+  font-size:1.4rem;        
+}
+input[type="text"] {	
+width:60px;					
+height:30px;			
+text-align:center;
+margin-right:10px;			
+}
+button {
+padding:10px 20px;
+}
+.show {
+margin-top:40px;
+border:1px solid black;
+padding:10px;
+background:#eee;
+}

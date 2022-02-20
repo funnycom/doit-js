@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캔버스에 개구리 얼굴 그리기</title>
+  <style>
+    canvas {
+      border:1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="400" height="300"></canvas>
+
+  <script>
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext("2d");
+
+    ctx.scale(1, 0.7);  // 세로 길이 줄이기
+
+    // 얼굴
+    ctx.fillStyle = "green";
+    ctx.strokeStyle = "black";
+    ctx.beginPath();
+    ctx.arc(150, 150, 80, 0, Math.PI * 2, false);
+    ctx.fill();
+
+    // 왼쪽 눈과 눈동자
+    ctx.beginPath();
+    ctx.arc(120, 80, 20, 0, Math.PI * 2, false);
+    ctx.fillStyle = "white";
+    ctx.strokeStyle = "green";    
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.arc(120, 80, 5, 0, Math.PI * 2, false);
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+    // 오른쪽 눈과 눈동자
+    ctx.beginPath();
+    ctx.arc(180, 80, 20, 0, Math.PI * 2, false);
+    ctx.fillStyle = "white";
+    ctx.strokeStyle = "green";    
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(180, 80, 5, 0, Math.PI * 2, false);
+    ctx.fillStyle = "black";
+    ctx.fill();    
+
+    // 입
+    ctx.beginPath();
+    ctx.arc(150, 150, 50, 0, (Math.PI / 180) * 180, false);
+    ctx.strokeStyle = "black";
+    ctx.lineWidth = 3;
+    ctx.stroke();
+  </script>
+</body>
+</html>

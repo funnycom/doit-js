@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전국 캠핑장 현황</title>
+</head>
+<body>
+  <!-- 지도를 표시할 div 입니다 -->
+  <div id="map" style="width:100%;height:600px;"></div>
+
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=66bb56bd796e4183ae7906d8b515a0fe&libraries=clusterer"></script>
+  <script>
+    const lat = 37.55684;
+    const lng = 126.91404;
+
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(lat, lng), // 지도의 중심좌표 - 이지스퍼블리싱
+            level: 14 // 지도의 확대 레벨
+        };
+
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+    // 마커 클러스터러를 생성합니다 
+    var clusterer = new kakao.maps.MarkerClusterer({
+        map: map, // 마커들을 클러스터로 관리하고 표시할 지도 객체 
+        averageCenter: true, // 클러스터에 포함된 마커들의 평균 위치를 클러스터 마커 위치로 설정 
+        minLevel: 10 // 클러스터 할 최소 지도 레벨 
+    });
+
+    // 서버에서 가져오기
+    var  url = 'http://api.visitkorea.or.kr/openapi/service/rest/GoCamping/basedList?ServiceKey=FSYGYSHOVs2%2BJnU1JYGsvu95uuPcadpsYhM84SzqBz17%2BOWXXCO4eHbhLP4efKKIz8PLbyO6tf93i5ajseadFg%3D%3D&MobileOS=ETC&MobileApp=appTest&numOfRows=100&_type=json';
+  
+    fetch(url)
+    .then(res => res.json())
+    .then(json => {
+      const data = json.response.body.items.item;
+
+      var markers = [];
+  
+      // 가져온 갯수만큼 반복합니다.
+      for(let i = 0; i < data.length; i++) {        
+        var marker = new kakao.maps.Marker({
+            map: map,
+            position: new kakao.maps.LatLng(data[i].mapY, data[i].mapX)  // 위도, 경도
+        });
+
+        markers.push(marker);
+
+        var infowindow = new kakao.maps.InfoWindow( {
+          content : data[i].facltNm   // 캠핑장 이름
+        });
+
+        kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
+        kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+      }
+
+      function makeOverListener(map, marker, infowindow) {
+          return function() {
+              infowindow.open(map, marker);          
+          };
+      }
+
+      function makeOutListener(infowindow) {
+          return function() {
+              infowindow.close();
+          };
+      }
+
+      clusterer.addMarkers(markers);
+    });    
+  </script>
+</body>
+</html>

@@ -8,7 +8,27 @@
   <link rel="stylesheet" href="css/bookList.css">
 </head>
 <body>
-
+  <div id="container">
+    <h1>Book List</h1>
+    <form>
+      <ul id="bookInfo">
+        <li>
+          <label for="title">제 목</label>
+          <input type="text" id="title">
+        </li>    
+        <li>
+          <label for="author">저 자</label>
+          <input type="text" id="author">
+        </li>   
+      </ul>
+  
+      <button type="reset">취소하기</button>
+      <button id="save">저장하기</button>
+    </form>
+    
+    <ul id="bookList"></ul>
+  </div>
+  
   <script src="js/bookList-result.js"></script>
 </body>
 </html>

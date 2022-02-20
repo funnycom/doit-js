@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캔버스에 원 그리기</title>
+  <style>
+    canvas {
+      border:1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="400" height="300"></canvas>
+
+  <script>
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext("2d");    
+
+    ctx.strokeStyle = "red";
+    ctx.beginPath();
+    ctx.ellipse(200, 70, 80, 50, 0, 0, Math.PI * 2);
+    ctx.stroke();
+
+    ctx.strokeStyle = "blue";
+    ctx.beginPath();
+    ctx.ellipse(150, 200, 80, 50, (Math.PI / 180) * -30, 0, Math.PI * 2);
+    ctx.stroke();
+  </script>
+</body>
+</html>

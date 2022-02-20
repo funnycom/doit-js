@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캔버스에서 텍스트 그리기</title>
+  <style>
+    canvas {
+      border:1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="400" height="200"></canvas>
+
+  <script>
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext("2d");
+
+    ctx.font = "italic 60px serif";
+    ctx.fillText("Javascript", 50, 70);
+    ctx.font = "bold 60px sans-serif";
+    ctx.fillText("Javascript", 50, 150);
+  </script>
+</body>
+</html>

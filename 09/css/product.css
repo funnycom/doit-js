@@ -1,0 +1,40 @@
+#container {
+  width:400px;
+  margin:10px auto;
+}
+ul {
+  list-style: none;
+}
+h1, h2 {
+  margin:20px auto 50px 40px;
+}
+h2 {
+  font-size:1.3rem;
+  border-bottom:1px dotted #ccc;
+}
+#prodInfo {
+  list-style: none;
+  width:400px;
+}
+#prodInfo label {
+  width:50px;
+  float:left;
+  margin-right:10px;
+  line-height:30px;
+}
+#prodInfo input {
+  width:200px;
+  height:30px;      
+  padding-left:10px;
+  margin-bottom: 10px;
+}
+#register {
+  width:280px;      
+  margin-left:40px;
+  padding: 15px;
+}
+
+#productList li {
+  font-size:1.2rem;
+  line-height:30px;
+}

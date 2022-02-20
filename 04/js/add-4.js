@@ -1,4 +1,4 @@
-(function(a, b) {
-  sum = a + b;
-}(100,200));
-document.write(`함수 실행 결과 : ${sum}`)
+let sum = function(a, b) {
+  return a + b;
+}
+console.log(`함수 실행 결과 : ${sum(10, 20)}`)

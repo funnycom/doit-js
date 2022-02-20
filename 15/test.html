@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그래픽 요소 변형하기</title>
+  <style>
+    body {
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items:center;
+    }
+    canvas {
+      border:1px solid #ccc;
+    }
+    button {
+      padding:10px;
+      margin:10px;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="400" height="400"></canvas>  
+
+  <script>
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext("2d");
+
+    ctx.save();
+    ctx.fillStyle = '#f00';
+    ctx.fillRect(10, 10, 100, 100);
+    ctx.rotate(25 * Math.PI / 180);
+
+    ctx.fillStyle = "#0f0";
+    ctx.fillRect(150, 10, 100, 100);
+    ctx.restore();
+    
+    ctx.fillStyle = "#09d";
+    ctx.fillRect(150, 10, 100, 100);
+
+    // translate 사용
+    ctx.translate(200, 80);
+    ctx.rotate(25 * Math.PI / 180);
+    ctx.translate(-200, -80);
+
+    ctx.fillStyle = "#00f";
+    ctx.fillRect(150, 150, 100, 100);
+  </script>
+</body>
+</html>

@@ -9,3 +9,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+button {
+  padding : 10px 20px;
+  border-style: 1px solid #ccc;  
+}
+
+p {
+  margin:20px;
+  font-size:2em;  
+}

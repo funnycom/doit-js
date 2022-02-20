@@ -1,4 +1,4 @@
-// 목록에 추가
+// 책 목록에 추가
 
 const title = document.querySelector("#title");   // '제목' 정보
 const author = document.querySelector("#author");   // '저자' 정보

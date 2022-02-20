@@ -1,9 +1,7 @@
-const factor = 5;
+let hi = "hello";   // 전역 변수
 
-function calc(num) {  
-  return num * factor;
+function greeting() {
+  console.log(hi);
 }
-{
-  let result = calc(10);
-  document.write(`result : ${result} `);
-}
+
+greeting();

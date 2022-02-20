@@ -3,8 +3,7 @@ function calcSum(n) {
   for(let i = 1; i <= n; i++) {
     sum += i;
   }
-  return sum;
+  console.log(`1부터 ${n}까지 더하면 ${sum}입니다.`);
 }
 
-let num = parseInt(prompt("몇까지 더할까요?"));
-document.write(`1부터 ${num}까지 더하면 ${calcSum(num)}`);
+calcSum(10);
