@@ -1,13 +1,13 @@
-function Book(title, pages, done = false) {
+function newBook (title, pages, done) {
   this.title = title;
   this.pages = pages;
   this.done = done;
 }
 
-Book.prototype.finish = function() {
+newBook.prototype.finish = function() {
   this.done === false ? str = "읽는 중" : str = "완독";
   return str;
 }
 
-const book1 = new Book("웹 표준의 정석", 648, false);
-const book2 = new Book("점프 투 파이썬", 360, true);
+const nBook1 = new newBook("웹 표준의 정석", 648, false);
+const nBook2 = new newBook("점프 투 파이썬", 360, true);
