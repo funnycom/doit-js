@@ -6,7 +6,6 @@ function counting(str, ch) {
     if (str.charAt(i) === ch) 
       count += 1;
   }
-
   return count;
 }
 

@@ -1,0 +1,18 @@
+#container {
+  width:300px;
+  margin:20px auto;
+}
+.start {      
+  padding:10px 20px;            
+}
+.done {
+  color:#999;
+  font-size:0.8em;
+  font-style: italic;
+  text-decoration: line-through;
+}
+.active {
+  padding:10px 20px;
+  background-color:#222;
+  color:white;
+}

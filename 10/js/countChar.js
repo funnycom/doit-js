@@ -6,7 +6,6 @@ function counting(str, ch) {
     if (str[i] === ch)        // i번째 요소가 ch인지 체크
       count += 1;
   }
-
   return count;
 }
 
