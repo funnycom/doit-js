@@ -14,19 +14,6 @@
 <body>
   <canvas width="400" height="300"></canvas>
 
-  <script>
-    const canvas = document.querySelector('canvas');
-    const ctx = canvas.getContext("2d");    
-
-    ctx.strokeStyle = "blue";
-    ctx.scale(1, 0.7);
-    ctx.beginPath()
-    ctx.arc(200, 150, 80, 0, Math.PI * 2, true);
-    ctx.stroke();
-    ctx.beginPath()
-    ctx.arc(200, 150, 30, 0, Math.PI * 2, false);
-    ctx.stroke();
-    ctx.closePath();
-  </script>
+  <script src="./js/ellipse-2.js"></script>
 </body>
 </html>

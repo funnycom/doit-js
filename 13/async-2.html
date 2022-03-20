@@ -8,21 +8,6 @@
 </head>
 <body>
 
-  <script>
-    function displayA() {
-      console.log("A");
-    }
-    function displayB(callback) {
-      setTimeout(() => {
-        console.log("B");
-        callback();
-      }, 2000);
-    }
-    function displayC() {
-      console.log("C");
-    }    
-    displayA();
-    displayB(displayC);
-  </script>
+  <script src="./js/async-2.js"></script>
 </body>
 </html>
