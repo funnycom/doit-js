@@ -7,3 +7,5 @@ const pizza = () => {
 const step1 = (message) => {
   console.log(message);
 };
+
+pizza().then(result => step1(result));

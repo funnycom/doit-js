@@ -6,11 +6,11 @@ const pizza = () => {
 
 const step1 = (message) => {
   console.log(message);
-  // return new Promise((resolve, reject) => {
-  //   setTimeout(() => {
-  //     resolve("피자 도우 준비");
-  //   }, 2000);
-  // });
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("피자 도우 준비");
+    }, 2000);
+  });
 };
 
 const step2 = (message) => {
