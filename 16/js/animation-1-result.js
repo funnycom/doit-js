@@ -1,13 +1,16 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
+canvas.width = window.innerWidth;    // 캔버스 너비
+canvas.height = window.innerHeight;  // 캔버스 높이
+
 const circle = {
   x: 100,
   y: 100,
   radius: 30,
   dx: 4,
   dy: 4,
-  color: "#ccc"
+  color: "#222"
 }
 
 function drawCircle() {
@@ -17,6 +20,7 @@ function drawCircle() {
   ctx.fill();
 }
 
+// drawCircle();
 function move() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawCircle();

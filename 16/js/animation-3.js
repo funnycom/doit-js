@@ -20,13 +20,12 @@ function Circle(x, y, radius, color) {
 
 const objs = [];
 for (let i = 0; i < 20; i++) {
-  const radius = Math.floor((Math.random() * 50)) + 10;    // 무작위 반지름
-  const x = Math.random() * (canvas.width - radius * 2) + radius;     // 원점 무작위 x좌표
-  const y = Math.random() * (canvas.height - radius * 2) + radius;     // 원점 무작위 y좌표
-  const color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;   // 무작위 색상
-  objs.push(new Circle(x, y, radius, color));      // objs에 인스턴스 추가
+  const radius = Math.floor((Math.random() * 50)) + 10;
+  const x = Math.random() * (canvas.width - radius * 2) + radius;
+  const y = Math.random() * (canvas.height - radius * 2) + radius;
+  const color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+  objs.push(new Circle(x, y, radius, color));      
 }
-// console.log(objs);
 
 for (let i = 0; i < objs.length; i++) {
   objs[i].draw();
