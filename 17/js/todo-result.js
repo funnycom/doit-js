@@ -92,7 +92,7 @@ function manageTodo(e) {
   if(whichButton === 'complete-button') {
     const todo = e.target.parentElement;
     todo.children[0].classList.toggle('completed');  // 내용 부분에 .completed 클래스 토글
-  } else {
+  } else if(whichButton === 'delete-button') {
     const todo = e.target.parentElement;
     removeLocal(todo);
     todo.remove();
@@ -100,14 +100,14 @@ function manageTodo(e) {
 }
 
 function removeLocal(todo) {
-  let todos;
+  let todos;     // 로컬 스토리지에서 가져온 할 일들
   if (localStorage.getItem('todos') === null) {
     todos = [];
   } else {  
     todos = JSON.parse(localStorage.getItem('todos'));
   }
-  // console.log(todo);
-  const index = todos.indexOf(todo.children[0].innerText);
-  todos.splice(index, 1);
-  localStorage.setItem('todos', JSON.stringify(todos));
+
+  const index = todos.indexOf(todo.children[0].innerText);  // 삭제할 할 일의 인덱스
+  todos.splice(index, 1);    // index번째 요소 삭제
+  localStorage.setItem('todos', JSON.stringify(todos));    // 변경된 todos 저장
 }

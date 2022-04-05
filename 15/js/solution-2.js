@@ -11,4 +11,4 @@ let img = new Image();
 img.onload = function() {
   ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 }
-img.src = "./images/text-bg.jpg";
+img.src = "images/text-bg.jpg";

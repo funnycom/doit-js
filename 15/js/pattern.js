@@ -7,4 +7,4 @@ img.onload = function() {
   ctx.fillStyle = pattern;     // 채우기 스타일을 패턴으로 지정
   ctx.fillRect(0, 0, 200, 200);      // 패턴을 채운 사각형 그리기 
 } 
-img.src = "./images/pattern.png";
+img.src = "images/pattern.png";
