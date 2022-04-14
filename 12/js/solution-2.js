@@ -19,5 +19,4 @@ button.addEventListener("click", () => {
   } finally {
     userNumber.value = "";
   }
-  
 });
