@@ -5,7 +5,7 @@ const author = document.querySelector("#author");   // '저자' 정보
 const save = document.querySelector("#save");   // '저장하기' 버튼
 const bookList = document.querySelector("#bookList");   // 정보가 표시될 영역
 
-save.addEventListener("click", (e) => {
+save.addEventListener("click", (e) => {         // 저장하기 버튼을 클릭하면?
   e.preventDefault();   // 폼 안의 버튼을 클릭했을 때 서버로 보내지 않도록
 
   const item = document.createElement("li");
