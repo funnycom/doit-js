@@ -28,10 +28,3 @@ save.addEventListener("click", (e) => {         // 저장하기 버튼을 클릭
     });
   }
 });
-  
-
-
-
-
-
-
