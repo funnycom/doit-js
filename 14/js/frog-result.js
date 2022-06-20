@@ -10,7 +10,7 @@ ctx.beginPath();
 ctx.arc(150, 150, 80, 0, Math.PI * 2, false);
 ctx.fill();
 
-// 왼쪽 눈과 눈동자
+// 눈과 눈동자
 ctx.beginPath();
 ctx.arc(120, 80, 20, 0, Math.PI * 2, false);
 ctx.arc(180, 80, 20, 0, Math.PI * 2, false);

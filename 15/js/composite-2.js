@@ -5,7 +5,7 @@ let ctx = canvas.getContext("2d");
 ctx.fillStyle = "#ccc";
 ctx.fillRect(100, 50, 100, 100);  
 
-ctx.globalCompositeOperation = "xor";
+ctx.globalCompositeOperation = "source-over";
 
 // source
 ctx.fillStyle = "#222";    

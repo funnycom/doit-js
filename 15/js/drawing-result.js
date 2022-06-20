@@ -6,8 +6,8 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight - toolbar.offsetHeight;
 
 // 캔버스 위치를 고려해 좌표 계산하기 위해
-const canvasOffsetX = canvas.offsetLeft;
-const canvasOffsetY = canvas.offsetTop;
+const canvasOffsetX = canvas.offsetLeft;   // 왼쪽에서 얼마나 떨어졌나
+const canvasOffsetY = canvas.offsetTop;    // 위에서 얼마나 떨어졌나
 
 const ctx = canvas.getContext("2d");
 
