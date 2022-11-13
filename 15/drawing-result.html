@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>드로잉 앱 만들기</title>
+  <link rel="stylesheet" href="css/drawing.css">
+</head>
+<body>
+  <div id="container">
+    <div id="toolbar">
+      <div>
+        <label for="stroke">색상</label>
+        <input type="color" id="stroke" value="#000">
+        <label for="lWidth">선 굵기</label>
+        <input type="number" id="lWidth" min="1" max="50" value="2">
+      </div>      
+      <button id="reset">지우기</button>
+    </div>
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="js/drawing-result.js"></script>  
+</body>
+</html>
