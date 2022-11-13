@@ -1,0 +1,46 @@
+	#container {
+		width:450px;
+		margin:20px auto;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	h1 {
+			font-size:1.5rem;
+		}
+
+		form {
+			width:100%;
+			margin-top:50px;
+			padding-left:50px;
+		}
+		label {
+			margin-right:20px;
+		}
+		input[type="text"] {	
+			width:60px;					
+			height:30px;			
+			text-align:center;
+			margin-right:10px;			
+			border:none;
+			border-bottom:1px solid #ccc;
+		}
+		#bttn {
+			padding:10px 20px;
+		}
+		#result {
+			margin-top:50px;
+			width:300px;
+			border:1px solid #ccc;
+			padding:20px;
+		}
+		p {
+			font-size:0.9rem;
+			line-height:2;
+		}
+		.accent {
+			font-size:1.2em;
+			font-weight: bold;
+		}
+

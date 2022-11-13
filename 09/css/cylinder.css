@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;      
+}
+#userInput {
+  width:320px;
+  height:150px;
+}
+#result {
+  width:300px; 
+  height:100px;     
+  text-align: center;
+  line-height: 100px;
+  background-color:#fcfcfc;      
+  border:1px solid #ccc;
+  border-radius:12px;
+}
+ul { list-style: none;}
+ul  li { margin:15px;}
+li > label {
+  float: left;
+  width:50px;
+  padding:5px;      
+}
+input[type="text"] {
+  width:140px;
+  padding:5px;
+}
+button {
+  width:190px;
+  margin-left:5px;
+  padding:5px;
+}

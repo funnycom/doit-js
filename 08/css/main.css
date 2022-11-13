@@ -1,0 +1,20 @@
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding:10px 20px;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+button:hover {
+  background-color:#06f;
+  color:#fff;
+}
