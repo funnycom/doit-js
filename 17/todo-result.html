@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List 만들기</title>
+  <link rel="stylesheet" href="css/todo-result.css">
+</head>
+<body>
+  <header>
+    <h1>오늘의 할 일</h1>
+  </header>
+  <form>
+    <label for="todo-input">할 일</label>
+    <input type="text" id="todo-input" placeholder="할 일을 입력하세요" required autocomplete="off">
+    <button id="add-button">추가</button>
+  </form>
+  <div id="container">
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="js/todo-result.js"></script>
+</body>
+</html>

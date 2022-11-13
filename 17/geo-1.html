@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지오로케이션 API 연습</title>
+  <style>
+    * {
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+
+    body {            
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:20px;
+    }
+
+  button {
+    margin-top:20px;
+    padding:10px 20px;    
+  }
+
+  #result {    
+    padding:10px 20px;
+  }
+  
+
+  </style>
+</head>
+<body>
+  <button id="getLocation">위치 정보 가져오기</button>
+  <div id="result"></div>
+
+  <script>
+    const getLocation = document.getElementById('getLocation');
+    getLocation.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, errorPosition);        
+      } else {
+        alert('지오로케이션을 지원하지 않습니다.');
+      }
+    });
+
+    function showPosition(position) {
+      document.querySelector("#result").innerHTML = `
+        <b>위도:</b> ${position.coords.latitude}, <b>경도:</b> ${position.coords.longitude}
+      `;
+    };
+    
+    function errorPosition(err) {
+      alert(err.message);
+    }
+  </script>
+</body>
+</html>

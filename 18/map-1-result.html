@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카카오 지도 API 활용하기</title>
+  <style>
+    * margin {
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 2.5rem;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <h1>위치 표시하기</h1>
+  <!-- 지도를 표시할 div 입니다 -->
+  <div id="map" style="width:100%;height:550px;"></div>
+  
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=66bb56bd796e4183ae7906d8b515a0fe"></script>
+  <script>
+    // 이지스퍼블리싱 좌표. 
+    // HTML의 지오로케이션 API를 사용해 현재 좌표를 가져온 후 사용해도 됩니다.
+    const lat = 37.55684;    // 위도
+    const lng = 126.91404;   // 경도
+    
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(lat, lng), // 지도의 중심좌표 - 이지스퍼블리싱
+            level: 3 // 지도의 확대 레벨
+        };
+    
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption);
+
+    // 마커가 표시될 위치입니다 
+    var markerPosition  = new kakao.maps.LatLng(lat, lng); 
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    // 마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성합니다
+    var iwContent = '<div style="padding:5px;font-size:0.9rem;"><a href="http://www.easyspub.co.kr" style="color:blue;text-decoration:none;" target="_blank">이지스퍼블리싱</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+        iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+    // 인포윈도우를 생성합니다
+    var infowindow = new kakao.maps.InfoWindow({
+      content : iwContent,
+      removable : iwRemoveable
+    });
+
+    // 마커에 마우스오버 이벤트를 등록합니다
+      kakao.maps.event.addListener(marker, 'click', function() {
+        // 마커 위에 인포윈도우를 표시합니다 
+        infowindow.open(map, marker);
+    });
+  </script>
+</body>
+</html>

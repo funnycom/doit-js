@@ -1,0 +1,68 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  font-size:1.5em;
+}
+
+header, form {
+  min-height:20vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form label {
+  display:none;
+}
+
+form input, 
+form button {
+  padding:0.5rem;
+  font-size:1.5rem;
+}
+
+#container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+ /* todo 항목 */
+ .todo {
+  margin:0.5rem;
+  font-size:1.2rem;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo .todo-content {
+  flex:1;
+  padding:0.5rem 1rem;
+  border-bottom: 1px dotted #ccc;
+}
+
+.todo button {  
+  padding: 0.5rem;
+  margin-right:0.2rem;
+  font-size:0.8rem;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #d8d8d8;
+  opacity: 0.5;
+}
