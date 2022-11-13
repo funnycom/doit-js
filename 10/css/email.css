@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+#userInput {
+  width:350px;
+  height:50px;
+  margin-left:10px;
+}
+input[type="email"] {
+  width:250px;
+  float:left;
+  height:30px;
+  padding-left:30px;
+}
+button {
+  width:50px;
+  height:30px;
+  float:left;
+  margin-left:15px;
+  background:#eee;  
+  border:1px solid #ccc;  
+}
+#result {
+  padding-left:30px;
+  font-weight:bold;
+}
