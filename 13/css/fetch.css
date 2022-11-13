@@ -1,0 +1,16 @@
+#container {
+  width: 400px;
+  margin: 20px auto;
+}
+h1 {
+  font-size:1.5em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+}
+#result {
+  width:100%;
+  margin: 20px 10px;
+  padding:10px;
+}

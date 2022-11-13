@@ -1,0 +1,23 @@
+body {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  height: 100vh;
+  background-color:#295500;
+  overflow: hidden;
+}
+#result {
+  color: #fffafa;
+  padding: 20px;      
+}  
+.quote {
+  font-family: "Georgia", serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.author {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-style: italic;
+}
