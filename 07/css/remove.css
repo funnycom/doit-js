@@ -1,0 +1,29 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+#cart{
+  margin:50px auto;
+  width:600px;
+  padding:10px 20px;  
+}
+
+#cart h1 {
+  margin-bottom: 20px;
+}
+
+#products p {
+  font-size:1.2em;
+  line-height: 3;
+}
+p > span {
+  color: #ccc;
+  margin-right: 0.8em;
+  font-weight:bold;
+}
+p > span:hover {
+  color: red;
+  cursor:pointer;
+}
