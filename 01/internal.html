@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문서 안에 스크립트 작성</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <p>새로 고침해 보세요</p>
+  
+  <script>
+    function random(number) {
+      return Math.floor(Math.random() * number);
+    }
+
+    function bgChange() {
+      const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+      document.body.style.backgroundColor = rndCol;
+    }
+
+      bgChange();
+    </script>
+</body>
+</html>
