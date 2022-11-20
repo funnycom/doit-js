@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습문제 2</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    h1, p {
+      text-align: center;
+    }
+    form {
+      width:400px;
+      padding:10px;
+      margin:20px auto;
+    }
+    label {
+      display:none;
+    }
+    input {
+      width:100%;
+      padding:5px;
+      margin:5px 0;
+    }
+    button {
+      width:100%;
+      height:40px;
+      padding:5px;
+      margin:5px 0;
+      border:1px solid #222;
+    }
+    button:hover {
+      background-color:#222;
+      color:#fff;
+      cursor:pointer;
+    }
+    #result {
+      width:150px;
+      height:60px;
+      padding:5px;
+      margin:15px auto;
+      border:1px solid #222;     
+      font-size:2rem;      
+      text-align: center;      
+      line-height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <h1>최대공약수 구하기</h1>
+  <p>두 수를 입력한 후 [계산하기]를 클릭하세요.</p>
+  <form>
+    <label for="number1">첫 번째 수 : </label>
+    <input type="text" id="number1" placeholder="첫 번째 수">
+    <label for="number2">두 번째 수 : </label>
+    <input type="text" id="number2" placeholder="두 번째 수">
+    <button type="button" id="calc">계산하기</button>
+  </form>
+  <div id="result"></div>  
+</body>
+</html>
