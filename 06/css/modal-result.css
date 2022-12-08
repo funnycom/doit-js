@@ -24,7 +24,7 @@ button {
 
 #modal-contents{
   background-color:#fff;
-  width:250px;
+  width:300px;
   padding:20px;
   border-radius:5px;
   position:relative;
@@ -58,5 +58,5 @@ h1 {
 }
 p {
   font-size:0.8rem;
-  line-height:1.8;
+  line-height:1.5;
 }
