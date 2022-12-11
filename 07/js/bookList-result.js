@@ -22,11 +22,11 @@ save.addEventListener("click", (e) => {
   const delButtons = document.querySelectorAll(".delButton"); // '삭제' 버튼 모두 가져오기
 
   for (let delButton of delButtons) {
-    delButton.addEventListener("click", removeItem);
+    delButton.addEventListener("click", function () {
+      this.parentNode.parentNode.removeChild(this.parentNode);
+      // 아래와 같이 변수를 사용할 수도 있음
+      // let list = this.parentNode;
+      // list.parentNode.removeChild(list);
+    });
   }
 });
-
-function removeItem() {
-  let list = this.parentNode;
-  list.parentNode.removeChild(list);
-}
