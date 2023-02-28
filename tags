@@ -1,0 +1,213 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Book	09/js/constructor-1.js	/^function Book(title, pages, done = false) {$/;"	c
+Book	09/js/inheri-1-result.js	/^function Book (title, price) {$/;"	c
+Book	09/js/object-3.js	/^function Book(title, pages, done = false) {$/;"	c
+Book	09/js/proto-1.js	/^function Book(title, pages, done = false) {$/;"	c
+Book.buy	09/js/inheri-1-result.js	/^Book.prototype.buy = function() {$/;"	m
+Book.finish	09/js/constructor-1.js	/^  this.finish = function () {$/;"	m
+Book.finish	09/js/object-3.js	/^  this.finish = function () {$/;"	m
+Book.finish	09/js/proto-1.js	/^  this.finish = function() {$/;"	m
+Circle	16/js/animation-3-result.js	/^function Circle(x, y, radius, color) {$/;"	c
+Circle	16/js/animation-3.js	/^function Circle(x, y, radius, color) {$/;"	c
+Circle	16/js/mycircle.js	/^function Circle(x, y, radius, color) {$/;"	c
+Circle	16/js/object-1.js	/^function Circle(x, y, radius, color) {$/;"	c
+Circle	16/js/object-2-result.js	/^function Circle(x, y, radius, color) {$/;"	c
+Circle.animate	16/js/animation-3-result.js	/^  this.animate = function() {$/;"	m
+Circle.draw	16/js/animation-3-result.js	/^  this.draw = function() {$/;"	m
+Circle.draw	16/js/animation-3.js	/^  this.draw = function() {$/;"	m
+Circle.draw	16/js/mycircle.js	/^  this.draw = function () {$/;"	m
+Circle.draw	16/js/object-1.js	/^  this.draw = function() {  $/;"	m
+Circle.draw	16/js/object-2-result.js	/^  this.draw = function() {$/;"	m
+Product	09/js/product.js	/^function Product(product, price, quantity) {$/;"	c
+Rect	16/js/solution-1.js	/^function Rect(x, y, width, height, color) {$/;"	c
+Rect	16/js/solution-2.js	/^function Rect(x, y, width, height, color) {$/;"	c
+Rect.animate	16/js/solution-2.js	/^  this.animate = function() {$/;"	m
+Rect.draw	16/js/solution-1.js	/^  this.draw = function() {$/;"	m
+Rect.draw	16/js/solution-2.js	/^  this.draw = function() {$/;"	m
+Textbook	09/js/inheri-1-result.js	/^function Textbook(title, price, major) {$/;"	c
+Textbook.buyTextbook	09/js/inheri-1-result.js	/^Textbook.prototype.buyTextbook = function() {   \/\/ 새로운 메서드 정의$/;"	m
+add	02/js/variable-1.js	/^function add(a, b) {$/;"	f
+add	02/js/variable-2.js	/^function add(a, b) {$/;"	f
+add	02/js/variable.js	/^function add(a, b) {$/;"	f
+addItem	07/js/bookList-result-2.js	/^function addItem(event) {$/;"	f
+addNum	04/js/rest-1.js	/^function addNum(...numbers) {$/;"	f
+addSum	04/js/scope-result.js	/^function addSum(n) {$/;"	f
+addSum	04/js/scope.js	/^function addSum(n) {$/;"	f
+addTodo	17/js/todo-result.js	/^function addTodo(e) {$/;"	f
+area	08/js/circle-2.js	/^function area(r) {$/;"	f
+area	08/js/circle.js	/^function area(r) {$/;"	f
+bgChange	01/internal.html	/^    function bgChange() {$/;"	f
+bgChange	01/js/changeBg.js	/^function bgChange() {$/;"	f
+bttn.onclick	05/js/darkmode.js	/^bttn.onclick = function() {$/;"	f
+button.onclick	05/js/solution-2.js	/^button.onclick = function() {$/;"	f
+button.onclick	06/js/event-2.js	/^button.onclick = function() {$/;"	f
+button.onclick	06/js/event-4.js	/^button.onclick = function() {$/;"	f
+button.onclick	06/js/ex-1.js	/^button.onclick = function() {$/;"	f
+button.onclick	15/js/transform-result.js	/^button.onclick = function() {$/;"	f
+bye	04/js/citizen-2.js	/^function bye() {$/;"	f
+calc	04/js/scope-5.js	/^function calc() {  $/;"	f
+calcSum	04/js/add-1.js	/^function calcSum() {$/;"	f
+calcSum	04/js/add-2.js	/^function calcSum(n) {$/;"	f
+calcSum	04/js/add-3.js	/^function calcSum(n) {$/;"	f
+cat.onload	14/js/solution-2.js	/^cat.onload = function() {$/;"	f
+change	04/js/scope-3.js	/^function change() {$/;"	f
+changeBackground	06/js/event-3.js	/^function changeBackground() {$/;"	f
+circum	08/js/circle-2.js	/^function circum(r) {$/;"	f
+circum	08/js/circle.js	/^function circum(r) {$/;"	f
+const.buy	09/js/object-2.js	/^  buy : function () {$/;"	m
+const.buy	09/js/object-5.js	/^  buy : function () {$/;"	m
+const.color	09/js/clone.js	/^  color: "blue",$/;"	p
+const.color	09/js/object-4.js	/^  color : "blue",$/;"	p
+const.color	16/js/animation-1-result.js	/^  color: "#222"$/;"	p
+const.color	16/js/animation-2-result.js	/^  color: "#222"$/;"	p
+const.color	16/js/animation-2.js	/^  color: "#222"$/;"	p
+const.color	16/js/move-1.js	/^  color: "#222"$/;"	p
+const.color	16/js/move-2.js	/^  color: "#222"$/;"	p
+const.digitCount	11/js/solution-2.js	/^  digitCount: 6, \/\/ 숫자 6개$/;"	p
+const.done	09/js/object-1.js	/^  done : false,$/;"	p
+const.done	09/js/object-1.js	/^  done : true,$/;"	p
+const.done	09/js/object-2.js	/^  done : false,$/;"	p
+const.dx	16/js/animation-1-result.js	/^  dx: 4,$/;"	p
+const.dx	16/js/animation-2-result.js	/^  dx: 4,$/;"	p
+const.dx	16/js/animation-2.js	/^  dx: 4,$/;"	p
+const.dx	16/js/move-1.js	/^  dx: 4,    \/\/ 가로로 움직일 크기 (x축 이동 속도)$/;"	p
+const.dx	16/js/move-2.js	/^  dx: 4,    \/\/ 가로로 움직일 크기 (x축 이동 속도) $/;"	p
+const.dy	16/js/animation-1-result.js	/^  dy: 4,$/;"	p
+const.dy	16/js/animation-2-result.js	/^  dy: 4,$/;"	p
+const.dy	16/js/animation-2.js	/^  dy: 4,$/;"	p
+const.dy	16/js/move-1.js	/^  dy: 4,    \/\/ 세로로 움직일 크기 (y축 이동 속도)$/;"	p
+const.dy	16/js/move-2.js	/^  dy: 4,     \/\/ 세로로 움직일 크기 (y축 이동 속도)$/;"	p
+const.finish	09/js/object-1.js	/^  finish : function () {$/;"	m
+const.finish	09/js/object-2.js	/^  finish : function () {$/;"	m
+const.finished	03/js/forin.js	/^  finished : true$/;"	p
+const.height	09/js/clone.js	/^  height: 50$/;"	p
+const.maxNumber	11/js/solution-2.js	/^  maxNumber: 45, \/\/ 최대 숫자 45$/;"	p
+const.pages	03/js/forin.js	/^  pages : 272,$/;"	p
+const.pages	09/js/object-1.js	/^  pages : 360,$/;"	p
+const.pages	09/js/object-1.js	/^  pages : 648,$/;"	p
+const.pages	09/js/object-2.js	/^  pages : 360,$/;"	p
+const.pages	09/js/object-2.js	/^  pages : 648,  $/;"	p
+const.pages	09/js/object-5.js	/^  pages : 648,  $/;"	p
+const.pubDate	03/js/forin.js	/^  pubDate : "2019-12-06",$/;"	p
+const.radius	16/js/animation-1-result.js	/^  radius: 30,$/;"	p
+const.radius	16/js/animation-2-result.js	/^  radius: 30,$/;"	p
+const.radius	16/js/animation-2.js	/^  radius: 30,$/;"	p
+const.radius	16/js/move-1.js	/^  radius: 30,$/;"	p
+const.radius	16/js/move-2.js	/^  radius: 30,$/;"	p
+const.size	09/js/object-4.js	/^  size : 15$/;"	p
+const.title	03/js/forin.js	/^  title : "깃&깃허브 입문",$/;"	p
+const.title	09/js/object-1.js	/^  title : "웹 표준의 정석",$/;"	p
+const.title	09/js/object-1.js	/^  title : "점프 투 파이썬",$/;"	p
+const.title	09/js/object-2.js	/^  title : "웹 표준의 정석",$/;"	p
+const.title	09/js/object-2.js	/^  title : "점프 투 파이썬",$/;"	p
+const.title	09/js/object-5.js	/^  title : "웹 표준의 정석",$/;"	p
+const.type	09/js/object-4.js	/^  type : "backpack",$/;"	p
+const.width	09/js/clone.js	/^  width:30,$/;"	p
+const.x	15/js/transform-result.js	/^const origin = {x:200, y:200};  \/\/ 원점 좌표$/;"	p
+const.x	16/js/animation-1-result.js	/^  x: 100,$/;"	p
+const.x	16/js/animation-2-result.js	/^  x: 100,$/;"	p
+const.x	16/js/animation-2.js	/^  x: 100,$/;"	p
+const.x	16/js/move-1.js	/^  x: 100,$/;"	p
+const.x	16/js/move-2.js	/^  x: 100,$/;"	p
+const.y	15/js/transform-result.js	/^const origin = {x:200, y:200};  \/\/ 원점 좌표$/;"	p
+const.y	16/js/animation-1-result.js	/^  y: 100,$/;"	p
+const.y	16/js/animation-2-result.js	/^  y: 100,$/;"	p
+const.y	16/js/animation-2.js	/^  y: 100,$/;"	p
+const.y	16/js/move-1.js	/^  y: 100,$/;"	p
+const.y	16/js/move-2.js	/^  y: 100,$/;"	p
+counting	10/js/countChar-2.js	/^function counting(str, ch) {$/;"	f
+counting	10/js/countChar.js	/^function counting(str, ch) {$/;"	f
+display	04/js/callback-1.js	/^function display() {$/;"	f
+display	13/js/callback-1.js	/^function display(result) {$/;"	f
+display	13/js/promise-ex-result.js	/^function display(result) {$/;"	f
+display	13/js/user-json-result.js	/^function display(users) {$/;"	f
+displayA	13/js/async-1.js	/^function displayA() {$/;"	f
+displayA	13/js/async-2.js	/^function displayA() {$/;"	f
+displayA	13/js/sync.js	/^function displayA() {$/;"	f
+displayB	13/js/async-1.js	/^function displayB() {$/;"	f
+displayB	13/js/async-2.js	/^function displayB(callback) {$/;"	f
+displayB	13/js/sync.js	/^function displayB() {$/;"	f
+displayC	13/js/async-1.js	/^function displayC() {$/;"	f
+displayC	13/js/async-2.js	/^function displayC() {$/;"	f
+displayC	13/js/sync.js	/^function displayC() {$/;"	f
+displayFavorites	04/js/rest-2.js	/^function displayFavorites(first, ...favs) {$/;"	f
+displayHello	13/js/hello-1.js	/^function displayHello() {$/;"	f
+displayLetter	13/js/callback-2.js	/^function displayLetter() {$/;"	f
+displayProduct	09/js/product.js	/^function displayProduct(product) {$/;"	f
+displaySelect	05/js/getForm.js	/^		function displaySelect() {$/;"	f
+displaySelect	06/js/getForm.js	/^		function displaySelect() {$/;"	f
+displaySubject	13/js/hello-3.js	/^function displaySubject(subject) {$/;"	f
+drawCircle	16/js/animation-1-result.js	/^function drawCircle() {$/;"	f
+drawCircle	16/js/animation-2-result.js	/^function drawCircle() {$/;"	f
+drawCircle	16/js/animation-2.js	/^function drawCircle() {$/;"	f
+drawCircle	16/js/move-1.js	/^  function drawCircle() {$/;"	f
+drawCircle	16/js/move-2.js	/^  function drawCircle() {$/;"	f
+errorPosition	17/geo-1.html	/^    function errorPosition(err) {$/;"	f
+errorPosition	17/geo-2.html	/^    function errorPosition(err) {$/;"	f
+getData	04/js/callback-result.js	/^function getData(callback) {$/;"	f
+getGCD	04/js/solution-2.js	/^function getGCD(n, m) {$/;"	f
+getGCD	05/js/solution-2.js	/^function getGCD(n, m) {$/;"	f
+getLocal	17/js/todo-result.js	/^function getLocal() {$/;"	f
+getStudents	11/js/solution-1.js	/^function getStudents(classRoom) {$/;"	f
+greeting	04/js/scope-2.js	/^function greeting() {$/;"	f
+greeting	04/js/scope-4.js	/^function greeting() {$/;"	f
+hello	04/js/citizen-2.js	/^function hello() {$/;"	f
+img.onload	14/js/img-1.js	/^img.onload = function() {$/;"	f
+img.onload	14/js/img-2.js	/^img.onload = function() {$/;"	f
+img.onload	14/js/img-3.js	/^img.onload = function() {$/;"	f
+img.onload	15/js/pattern.js	/^img.onload = function() {$/;"	f
+img.onload	15/js/solution-2.js	/^img.onload = function() {$/;"	f
+isPositive	04/js/solution-1.js	/^function isPositive(n) {$/;"	f
+let	04/js/add-4.js	/^let sum = function(a, b) {$/;"	f
+makeOutListener	18/camping-2-result.html	/^    function makeOutListener(infowindow) {$/;"	f
+makeOutListener	18/map-2.html	/^    function makeOutListener(infowindow) {$/;"	f
+makeOutListener	18/map-3.html	/^    function makeOutListener(infowindow) {$/;"	f
+makeOverListener	18/camping-2-result.html	/^    function makeOverListener(map, marker, infowindow) {$/;"	f
+makeOverListener	18/map-2.html	/^    function makeOverListener(map, marker, infowindow) {$/;"	f
+makeOverListener	18/map-3.html	/^    function makeOverListener(map, marker, infowindow) {$/;"	f
+manageTodo	17/js/todo-result.js	/^function manageTodo(e) {$/;"	f
+move	16/js/animation-1-result.js	/^function move() {$/;"	f
+move	16/js/animation-2-result.js	/^function move() {$/;"	f
+move	16/js/animation-2.js	/^function move() {$/;"	f
+move	16/js/move-1.js	/^  function move() {$/;"	f
+move	16/js/move-2.js	/^  function move() {$/;"	f
+move	16/js/solution-2.js	/^function move() {$/;"	f
+multiple	04/js/example-1.js	/^function multiple(a, b) {$/;"	f
+multiple	04/js/multiple.js	/^function multiple(a, b = 5, c = 10) {$/;"	f
+newBook	09/js/proto-2.js	/^function newBook (title, pages, done) {$/;"	c
+newBook.finish	09/js/proto-2.js	/^newBook.prototype.finish = function() {$/;"	m
+num	04/js/scope.js	/^var num = 3;$/;"	v
+openPopup	08/js/popup-2.js	/^function openPopup() {$/;"	f
+order	13/js/callback-1.js	/^function order(coffee, callback) {$/;"	f
+random	01/internal.html	/^    function random(number) {$/;"	f
+random	01/js/changeBg.js	/^function random(number) {$/;"	f
+randomRGB	15/js/transform-result.js	/^function randomRGB() {$/;"	f
+removeItem	07/js/bookList-result-2.js	/^function removeItem() {$/;"	f
+removeLocal	17/js/todo-result.js	/^function removeLocal(todo) {$/;"	f
+renderHTML	12/js/student-2-result.js	/^function renderHTML(contents) {$/;"	f
+run	09/js/solution-1.js	/^  run = function () {$/;"	f
+run	09/js/solution-2.js	/^  run = function () {$/;"	f
+saveToLocal	17/js/todo-result.js	/^function saveToLocal(todo) {$/;"	f
+showArray	10/js/solution-1.js	/^function showArray(area, arr) {$/;"	f
+showData	04/js/callback-result.js	/^function showData(name, age) {$/;"	f
+showErr	13/js/promise-ex-result.js	/^function showErr(err) {$/;"	f
+showPosition	17/geo-1.html	/^    function showPosition(position) {$/;"	f
+showPosition	17/geo-2.html	/^    function showPosition(position) {$/;"	f
+sum	02/js/hoisting-1.js	/^var sum = x + y;$/;"	v
+sum	02/js/variable-1.js	/^var sum = 100;   \/\/ var 변수는 재선언, 재할당 가능$/;"	v
+sum	04/js/scope-1.js	/^function sum(a, b) {$/;"	f
+update	16/js/animation-3-result.js	/^function update() {$/;"	f
+userCheck	04/js/citizen-2.js	/^function userCheck(name, fn) {$/;"	f
+viewBttn.onclick	05/js/solution-1.js	/^viewBttn.onclick = function() {$/;"	f
+whatsYourFavorite	13/js/hello-3.js	/^function whatsYourFavorite() {$/;"	f
+window.onload	08/js/changeBg-result.js	/^window.onload = function () {$/;"	f
+x	02/js/hoisting-1.js	/^var x = 10;$/;"	v
+xhr.onreadystatechange	12/js/solution-1.js	/^xhr.onreadystatechange = function () {$/;"	f
+xhr.onreadystatechange	12/js/student-2-result.js	/^xhr.onreadystatechange = function () {$/;"	f
+xhr.onreadystatechange	12/js/student-result.js	/^xhr.onreadystatechange = function () {$/;"	f
+y	02/js/hoisting-1.js	/^var y = 20;$/;"	v
