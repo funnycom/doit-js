@@ -33,8 +33,8 @@
       minLevel: 10 // 클러스터 할 최소 지도 레벨 
     });
 
-    // 서버에서 가져오기
-    const  url = 'http://api.visitkorea.or.kr/openapi/service/rest/GoCamping/basedList?ServiceKey=FSYGYSHOVs2%2BJnU1JYGsvu95uuPcadpsYhM84SzqBz17%2BOWXXCO4eHbhLP4efKKIz8PLbyO6tf93i5ajseadFg%3D%3D&MobileOS=ETC&MobileApp=appTest&numOfRows=291&_type=json';
+    // 서버에서 가져오기 (관광공사 API)
+    const  url = 'https://apis.data.go.kr/B551011/GoCamping/basedList?numOfRows=230&pageNo=1&MobileOS=ETC&MobileApp=testAPP&serviceKey=FSYGYSHOVs2%2BJnU1JYGsvu95uuPcadpsYhM84SzqBz17%2BOWXXCO4eHbhLP4efKKIz8PLbyO6tf93i5ajseadFg%3D%3D&_type=json';
   
     fetch(url)
     .then(res => res.json())
